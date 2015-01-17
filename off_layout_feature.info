@@ -1,4 +1,4 @@
-name = Layout Feature
+name = Off Layout Feature
 core = 7.x
 package = Features
 project = off_layout_feature
