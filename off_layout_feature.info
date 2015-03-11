@@ -2,8 +2,14 @@ name = Off Layout Feature
 core = 7.x
 package = Features
 project = off_layout_feature
-dependencies[] = features
+dependencies[] = book_explorer
 dependencies[] = fe_block
+dependencies[] = features
+dependencies[] = groups_feature
+dependencies[] = header_feature
+dependencies[] = masquerade
+dependencies[] = menu_block
+dependencies[] = message_feature
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 
