@@ -1,6 +1,7 @@
 <?php
 /**
  * @file
+ * off_layout_feature.features.fe_block_settings.inc
  */
 
 /**
@@ -11,87 +12,85 @@ function off_layout_feature_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['views-front_icons-block'] = array(
-    'cache' => -1,
+  $export['book_explorer-book_explorer'] = array(
+    'cache' => 5,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'front_icons-block',
-    'module' => 'views',
+    'delta' => 'book_explorer',
+    'module' => 'book_explorer',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
-        'region' => 'featured',
+        'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => -35,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
+        'weight' => -15,
       ),
     ),
     'title' => '',
-    'visibility' => 1,
+    'visibility' => 0,
   );
 
-  $export['user-login'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'login',
-    'module' => 'user',
-    'node_types' => array(),
-    'pages' => '<front>',
-    'roles' => array(
-      'anonymous user' => 1,
-    ),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
-  $export['quicktabs-projects'] = array(
+  $export['groups_feature-group_toolbar'] = array(
     'cache' => 1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'projects',
-    'module' => 'quicktabs',
+    'delta' => 'group_toolbar',
+    'module' => 'groups_feature',
     'node_types' => array(),
-    'pages' => 'projects',
+    'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'custom_theme' => array(
-        'region' => 'content_lower',
-        'status' => 1,
-        'theme' => 'custom_theme',
-        'weight' => 0,
-      ),
-      'seven' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'custom_zurb',
+        'weight' => -32,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['groups_feature-user_groups_list'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'user_groups_list',
+    'module' => 'groups_feature',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
         'weight' => 0,
       ),
     ),
-    'title' => '<none>',
-    'visibility' => 1,
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['header_feature-group_footer'] = array(
@@ -104,17 +103,17 @@ function off_layout_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'banner-lower',
         'status' => 1,
         'theme' => 'custom_zurb',
         'weight' => -37,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
       ),
     ),
     'title' => '',
@@ -131,17 +130,17 @@ function off_layout_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'header',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => -38,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
+        'weight' => -37,
       ),
     ),
     'title' => '',
@@ -158,17 +157,17 @@ function off_layout_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'banner-lower',
         'status' => 1,
         'theme' => 'custom_zurb',
         'weight' => -36,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
       ),
     ),
     'title' => '',
@@ -185,17 +184,17 @@ function off_layout_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'header',
         'status' => 1,
         'theme' => 'custom_zurb',
         'weight' => -37,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
       ),
     ),
     'title' => '',
@@ -212,70 +211,43 @@ function off_layout_feature_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'content',
         'status' => 1,
         'theme' => 'custom_zurb',
         'weight' => 20,
       ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
     ),
     'title' => '',
     'visibility' => 0,
   );
 
-  $export['system-main'] = array(
+  $export['menu_block-1'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'main',
-    'module' => 'system',
+    'delta' => 1,
+    'module' => 'menu_block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'custom_zurb' => array(
-        'region' => 'content',
-        'status' => 1,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
         'weight' => 0,
       ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['system-user-menu'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'user-menu',
-    'module' => 'system',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
       'custom_zurb' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -303,21 +275,239 @@ node/add/*',
       'authenticated user' => 2,
     ),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'content',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => -38,
+        'weight' => -37,
       ),
-      'seven' => array(
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['system-main'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'main',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['system-user-menu'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'user-menu',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['user-login'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'login',
+    'module' => 'user',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(
+      'anonymous user' => 1,
+    ),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
         'weight' => 0,
       ),
     ),
     'title' => '',
     'visibility' => 1,
+  );
+
+  $export['views-301386dba33cbdacd710e75c8357d743'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => '301386dba33cbdacd710e75c8357d743',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => 'community',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['views-all_users-block'] = array(
+    'cache' => -1,
+    'css_class' => 'iin-feature',
+    'custom' => 0,
+    'delta' => 'all_users-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => 'community',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['views-document_list-group_block'] = array(
+    'cache' => -1,
+    'css_class' => 'sidetheme',
+    'custom' => 0,
+    'delta' => 'document_list-group_block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-featured-block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'featured-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => 'split_second',
+        'status' => 1,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['views-featured_users-team_block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'featured_users-team_block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-follow_group-block'] = array(
@@ -331,16 +521,16 @@ node/add/*',
 user/*',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'split_second',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -359,16 +549,16 @@ user/*',
 user/*',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'split_first',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -387,16 +577,16 @@ user/*',
 user/*',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'split_second',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -415,16 +605,16 @@ user/*',
 user/*',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'split_second',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -432,90 +622,61 @@ user/*',
     'visibility' => 1,
   );
 
-  $export['views-recent_activity-block'] = array(
-    'cache' => -1,
-    'css_class' => 'hidden-phone',
-    'custom' => 0,
-    'delta' => 'recent_activity-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'innovation-capabilities
-user/registration
-user/password
-user',
-    'roles' => array(
-      'authenticated user' => 2,
-    ),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-recent_activity-group_block'] = array(
+  $export['views-front_icons-block'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'recent_activity-group_block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => -28,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => 'Activity',
-    'visibility' => 0,
-  );
-
-  $export['views-featured-block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'featured-block',
+    'delta' => 'front_icons-block',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
-      'custom_zurb' => array(
-        'region' => 'split_second',
-        'status' => 1,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
         'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => 'banner-middle',
+        'status' => 1,
+        'theme' => 'custom_zurb',
+        'weight' => -36,
       ),
     ),
     'title' => '',
     'visibility' => 1,
+  );
+
+  $export['views-group_users-block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'group_users-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => 'node/*/edit
+user/*/edit',
+    'roles' => array(
+      'authenticated user' => 2,
+    ),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => -30,
+      ),
+    ),
+    'title' => 'Members',
+    'visibility' => 0,
   );
 
   $export['views-news-block'] = array(
@@ -528,16 +689,16 @@ user',
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'split_first',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -557,397 +718,48 @@ user',
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'custom_zurb',
         'weight' => 0,
       ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
     ),
     'title' => '',
     'visibility' => 0,
   );
 
-  $export['views-tag_filter-group_block'] = array(
+  $export['views-recent_activity-block'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'hidden-phone',
     'custom' => 0,
-    'delta' => 'tag_filter-group_block',
+    'delta' => 'recent_activity-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-tag_filter-user_block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'tag_filter-user_block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-301386dba33cbdacd710e75c8357d743'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => '301386dba33cbdacd710e75c8357d743',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'community',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
-  $export['views-all_users-block'] = array(
-    'cache' => -1,
-    'css_class' => 'iin-feature',
-    'custom' => 0,
-    'delta' => 'all_users-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'community',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
-  $export['views-featured_users-team_block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'featured_users-team_block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-0ef6861993bdfc5484027fdafe558cf8'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => '0ef6861993bdfc5484027fdafe558cf8',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'partners-providers',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
-  $export['views-112bcb4710acf1a126d5d1fb675f146c'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => '112bcb4710acf1a126d5d1fb675f146c',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'partners-providers',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
-  $export['views-organizations-block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'organizations-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['book_explorer-book_explorer'] = array(
-    'cache' => 5,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'book_explorer',
-    'module' => 'book_explorer',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => 'sidebar_second',
-        'status' => 1,
-        'theme' => 'custom_zurb',
-        'weight' => -15,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-document_list-group_block'] = array(
-    'cache' => -1,
-    'css_class' => 'sidetheme',
-    'custom' => 0,
-    'delta' => 'document_list-group_block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['groups_feature-group_toolbar'] = array(
-    'cache' => 1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'group_toolbar',
-    'module' => 'groups_feature',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => 'sidebar_second',
-        'status' => 1,
-        'theme' => 'custom_zurb',
-        'weight' => -32,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['groups_feature-user_groups_list'] = array(
-    'cache' => 1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'user_groups_list',
-    'module' => 'groups_feature',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'custom_zurb' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-group_users-block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'group_users-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'node/*/edit
-user/*/edit',
+    'pages' => 'innovation-capabilities
+user/registration
+user/password
+user',
     'roles' => array(
       'authenticated user' => 2,
     ),
     'themes' => array(
-      'custom_zurb' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'custom_zurb',
-        'weight' => -30,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
         'weight' => 0,
       ),
-    ),
-    'title' => 'Members',
-    'visibility' => 0,
-  );
-
-  $export['views-subgroups-group_block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'subgroups-group_block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
       'custom_zurb' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'custom_zurb',
-        'weight' => 5,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -955,30 +767,30 @@ user/*/edit',
     'visibility' => 0,
   );
 
-  $export['menu_block-1'] = array(
+  $export['views-recent_activity-group_block'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 1,
-    'module' => 'menu_block',
+    'delta' => 'recent_activity-group_block',
+    'module' => 'views',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'custom_zurb' => array(
-        'region' => 'footer',
-        'status' => 1,
-        'theme' => 'custom_zurb',
-        'weight' => -35,
-      ),
-      'seven' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
         'weight' => 0,
       ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => -28,
+      ),
     ),
-    'title' => '<none>',
+    'title' => 'Activity',
     'visibility' => 0,
   );
 
@@ -992,16 +804,16 @@ user/*/edit',
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'custom_zurb',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
         'weight' => 0,
       ),
     ),
@@ -1019,16 +831,97 @@ user/*/edit',
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'custom_zurb' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'custom_zurb',
         'weight' => 0,
       ),
-      'seven' => array(
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-subgroups-group_block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'subgroups-group_block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => 5,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-tag_filter-group_block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'tag_filter-group_block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-tag_filter-user_block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'tag_filter-user_block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'custom_zurb' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'custom_zurb',
         'weight' => 0,
       ),
     ),

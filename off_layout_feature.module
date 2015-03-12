@@ -6,3 +6,15 @@
 
 include_once 'off_layout_feature.features.inc';
 
+/**
+ * Implementation of hook_menu_alter().
+ */
+function off_layout_feature_menu_alter(&$items) {
+  // Registration and login pages.
+  $items['contribute'] = array(
+    'title' => 'Contribute',
+    'page callback' => 'core_feature_empty_page',
+    'weight' => 2,
+    'menu_name' => 'main-menu',
+  );
+}
